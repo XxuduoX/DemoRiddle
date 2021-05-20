@@ -18,7 +18,7 @@ public class AnswerActivity extends AppCompatActivity {
         Intent intentReceived = getIntent();
         String questionsSelected = intentReceived.getStringExtra("Question");
 
-        if (questionsSelected=="Q1"){
+        if (questionsSelected.equals("Q1")){
             tvDisplay.setText(questionsSelected + " answer is: Queue");
         }else{
             tvDisplay.setText(questionsSelected + " answer is: Gone");
